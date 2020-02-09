@@ -27,26 +27,26 @@
                   <hr>
                   <div class="form-group mb-1">
                     <label class="text-muted mb-0"><b>Name <span class="text-danger">*</span> </b></label>
-                    <input type="text" class="form-control" placeholder="Name" required>
+                    <input type="text" name="uname" id="userName" id="userName" class="form-control" placeholder="Name" required>
                   </div>
                   <div class="form-group mb-1 mt-0">
                     <label class="text-muted mb-0"><b>Contact Number <span class="text-danger">*</span> </b></label>
-                    <input type="number" class="form-control" placeholder="Contact Number" required>
+                    <input type="number" name="userPhone" id="userPhone" class="form-control" placeholder="Contact Number" required>
                   </div>
                   <div class="form-group mb-1 mt-0">
                     <label class="text-muted mb-0"><b>Email ID <span class="text-danger">*</span> </b></label>
-                    <input type="email" class="form-control" placeholder="Email ID" required>
+                    <input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="Email ID" required>
                   </div>
                   <div class="form-group mb-1">
                     <label class="text-muted mb-0"><b>Name of Your Firm <span class="text-danger">*</span> </b></label>
-                    <input type="text" class="form-control" placeholder="Provide your Company Name">
+                    <input type="text" name="userCompanyName" id="userCompanyName" class="form-control" placeholder="Provide your Company Name">
                   </div>
                   <div class="form-group mb-1">
                     <label class="text-muted mb-0"><b>Select Company Type <span class="text-danger">*</span></b></label>
-                    <select class="form-control">
-                      <option value="">IT Consulting</option>
-                      <option value="">Manufacturing</option>
-                      <option value="">Business Development</option>
+                    <select name="userCompanyType" id="userCompanyType" class="form-control">
+                      <option value="IT Consulting">IT Consulting</option>
+                      <option value="Manufacturing">Manufacturing</option>
+                      <option value="Business Development">Business Development</option>
                     </select>
                   </div>
                   <label >
