@@ -1,0 +1,421 @@
+/*********
+****** Designed and Developed by Weroko Innovation and Solution LLP
+***** Author: https://www.weroko.com
+**** 
+***
+*/
+@import url("https://rsms.me/inter/inter.css");
+html,* {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px;
+ }
+   .help-block{
+     display: none;
+   }
+    body{
+        background-color: #efefef;
+    }
+    .container{
+        padding: 60PX;
+}
+    h1{
+        font-size: 37.5px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.75;
+        letter-spacing: -0.09px;
+        text-align: center;
+        color: #212529;
+    }
+    .main-header{
+        text-align: center;
+    }
+    .form-control{
+     color: #000000;
+    margin-bottom: 24px; 
+    font-size: 13.3px;
+    }
+    #submit{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    h5{
+        margin-bottom:25px;
+        font-weight: bold;
+
+    }
+    input[text]:placeholder{
+        height: 24px;
+        width: 159px;
+        color: rgba(255,8,8,0.6);
+        font-family: "SF UI Display";
+        font-size: 13px;
+        letter-spacing: 0.12px;
+        line-height: 24px;
+}
+#checkbox {
+    height: 10px;
+    width: 10px;
+}
+.form-check-input {
+    height: 18px;
+    width: 18px;
+    background-color: #425A70;
+}
+.p1 {
+    height: 1.6%;
+    color: #56575A;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.05px;
+    line-height: 20px;
+}
+.create-account {
+
+    color: #03c;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.04px;
+    line-height: 15px;
+}
+
+ button{
+    box-sizing: border-box;
+    height: 40px;
+    width: 380px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+div.col{
+    margin-right: 24px;
+}
+#col{
+    border-left:1.2px solid #A6A6A6;
+
+}
+
+.create-account:hover {
+background: #03c;
+border-color: #03c;
+color: #ffffff;
+}
+.navbar {
+    border-bottom: 1px solid;
+    border-color: #A6A6A6;
+    box-shadow: .1px;
+    background-color: #ffffff;
+    height: 80px;
+
+} 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  padding: 5px;
+}
+.navbar ul li a{
+    font-weight: 900;
+    border: 1px solid;
+    border-color: #03c;
+    color: #03c;
+    text-align: center;
+    padding-top: 5PX;
+    padding-bottom: 5PX;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+.navbar-brand{
+    margin-left: 40px;
+    font-weight: bold;
+    color: black !important;
+}
+
+.Login{
+      font-weight: 1000px;
+      padding-left: 20px;
+      padding-right: 20px
+
+}
+
+.bg-primary {
+ background-color: #000 !important;
+}
+
+
+
+.footer {
+    background: #EDEFF1;
+    height: auto;
+    padding-bottom: 30px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #DDDDDD;
+    margin-top: 50px;
+}
+.footer p {
+    margin: 0;
+}
+
+.footer h3 {
+    border-bottom: 1px solid #BAC1C8;
+    color: #54697E;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 40px 0 10px;
+    text-transform: uppercase;
+}
+.footer ul {
+    font-size: 13px;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 15px;
+    color: #7F8C8D;
+}
+.footer ul li a {
+    padding: 0 0 5px 0;
+    display: block;
+}
+.footer a {
+    color: #78828D
+}
+.footer-text  {
+    font-size: 10px;
+    color:#ffff !important;
+
+}
+.footer-text a {
+    font-size: 10px;
+    color:#ffff !important;
+    margin: 10px;
+}
+#footer-div{
+    border-left: 1px solid #ffff;
+}
+ .py-3{
+    padding: 0px 0px 0px 0px !important;
+}
+
+.text-center{
+    background-color: #03c;
+    text-align: center;
+    color: white;
+}
+/*-------------------------------------- Desktop Version-------------*/
+@media(min-width: 768px){
+.emg_bac{
+    background-color: #03c;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+}
+.log_from{
+    margin-left: 50%;
+}
+input [type=text]{
+    border:1px solid #a6a6a6;
+}
+
+#btn{
+	text-transform: uppercase;
+	font-weight: bold;
+	background: #30c;
+	color: #ffff;
+	font-size: 15px;
+	line-height: 5px;
+	margin-bottom: 20px;
+}
+.title{
+	font-size: 45px;
+	font-weight: bold !important;
+	color: #ffffff;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 50px; 
+	line-height: 50px
+
+}
+.para{
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 20px;
+}
+.pull-left{
+	width: 50%;
+	position: absolute !important;
+	height: 460px;
+}
+.divition{
+	background-color: #03c;
+	height: 13px;
+	width: 85px;
+	margin-top: -1.6%;
+	margin-left: 40px;
+    position: absolute;
+}
+.col_log{
+	padding: 40px;
+	width: 75% ; 
+}
+.title_log{
+	font-size: 40px;
+	 font-weight: bold !important;
+	 text-align: left;
+	 padding-bottom: 20px;
+	 padding-top: 0px;
+	 margin-top: -10%px !important;
+	 padding-bottom: 5px;
+}
+.input_rem{
+	 height: 18px;
+	 width: 18px;
+	 background-color: #ffffff;
+}
+.psw{
+	text-align: center;
+	font-weight: bold;
+}
+.tarm{
+	text-align: center;
+	font-size: 12px;
+	margin-left:50px;
+	font-style: italic;
+	font-weight: bold;
+}
+.queary{
+	text-align:center; 
+	font-size: 13px; 
+	border-top: 1px solid #a6a6a6; 
+	padding-top: 20px;
+}
+}
+/* ------------------------------------------On screens that are 992px wide or less, ---------------------------------*/
+@media (max-width: 728px) {
+
+
+.img{
+	width: auto;
+
+}
+.emg_bac{
+    background-color: #03c;
+    height: 100%;
+    background-size: cover;
+}
+/*.log_from{
+    margin-left: 50%;
+}*/
+input [type=text]{
+    border:1px solid #a6a6a6;
+}
+
+#btn{
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #30c;
+    color: #ffff;
+    font-size: 15px;
+    line-height: 5px;
+    margin-bottom: 20px;
+    border: none;
+}
+.title{
+    font-size: 45px;
+    font-weight: bold !important;
+    color: #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 50px; 
+    line-height: 50px
+
+}
+.para{
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+   margin-left: 10%;
+    margin-right: 10%;
+    line-height: 20px;
+
+}
+.pull-left{
+    width: 100%;
+    
+}
+.divition{
+    background-color: #03c;
+    height: 20px;
+    width: 85px;
+    margin-top: -34px;
+    position: absolute;
+    margin-left:20px
+}
+.col_log{
+    padding: 20px;
+    margin-top: 375px;
+}
+.title_log{
+    font-size: 40px;
+     font-weight: bold !important;
+     text-align: center;
+     padding-bottom: 20px;
+     padding-top: 0px;
+     margin-top: -10%px !important;
+     padding-bottom: 5px;
+}
+.input_rem{
+     height: 18px;
+     width: 18px;
+     background-color: #ffffff;
+}
+.psw{
+    text-align: center;
+    font-weight: bold;
+}
+.tarm{
+    text-align: center;
+    font-size: 12px;
+    margin-left:50px;
+    font-style: italic;
+    font-weight: bold;
+}
+.queary{
+    text-align:center; 
+    font-size: 13px; 
+    border-top: 1px solid #a6a6a6; 
+    padding-top: 20px;
+}
+
+
+/*--------------------footer---------------------*/
+
+
+
+#footer-div{
+    border-top: 1px solid #ffff;
+    border-left: none;
+    padding-top: 10px;
+    }
+div.col-md-6{
+    text-align: center;
+
+}
+ .py-3{
+    padding: 0px 0px 0px 0px !important;
+}
+}
+
