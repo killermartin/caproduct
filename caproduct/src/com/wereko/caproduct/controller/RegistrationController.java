@@ -66,6 +66,12 @@ public class RegistrationController extends HttpServlet {
 	        rd.forward(request, response);
 	                      
 	     }
+		else
+		{
+			request.setAttribute("message", "Something went wrong!");
+	        RequestDispatcher rd = request.getRequestDispatcher("register.jsp");
+	        rd.forward(request, response);
+		}
 		
 	}
 

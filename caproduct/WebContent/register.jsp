@@ -45,11 +45,11 @@
                   </div>
                   <div class="form-group mb-1 mt-0">
                     <label class="text-muted mb-0"><b>Password <span class="text-danger">*</span> </b></label>
-                    <input type="email" name="password" id="password" class="form-control" placeholder="Choose a password" required>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Choose a password" required>
                   </div>
                   <div class="form-group mb-1 mt-0">
                     <label class="text-muted mb-0"><b>Repeat Password <span class="text-danger">*</span> </b></label>
-                    <input type="email" name="repeatPassword" id="repeatPassword" class="form-control" placeholder="Repeat Password" required>
+                    <input type="password" name="repeatPassword" id="repeatPassword" class="form-control" placeholder="Repeat Password" required>
                   </div>
                   
                   <div class="form-group mb-1">
@@ -76,14 +76,15 @@
                       </div>
                   </div>
                   </form>
+                  <% if(null!=request.getAttribute("message"))
                   <div class="alert alert-success" role="alert">
-                    <% if(null!=request.getAttribute("message"))
+                    
     		{
     	
         		out.println(request.getAttribute("message"));
         
-    		}%>
-                </div>
+    		}
+                </div>%>
               </div>
             </div>
        </div>

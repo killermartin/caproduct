@@ -10,7 +10,7 @@ public class DBConn {
 	public static Connection getDBConn(){  
 		try{  
 		Class.forName("com.mysql.jdbc.Driver");  
-		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/sonoo","root","root");  
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/caproduct","root","root1234");  
 		//here sonoo is database name, root is username and password   
 		
 		return con;

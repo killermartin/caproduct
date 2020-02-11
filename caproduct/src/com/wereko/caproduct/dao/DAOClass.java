@@ -51,7 +51,7 @@ public class DAOClass {
 		
 		Connection con=com.wereko.connection.DBConn.getDBConn();
 		try {
-		String sql="Select email,password from users where email=? ";
+		String sql="Select userEmail,password from users where email=? ";
 		PreparedStatement st=con.prepareStatement(sql);
 		st.setString(1, userbean.getUserEmail());
 		
