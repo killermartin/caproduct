@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/login.css">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  
+  
+  <script>
+  
+  
+  </script>
 </head>
 <!------ Include the above in your HEAD tag ---------->
 
@@ -22,12 +28,12 @@
            </div>
            <div class="col-md-6 col-xl-6 col-xs-12">
                <div class="container-fluid">
-                <form>
+                <form action="/Registration" method="post">
                   <h1  class="title_log mb-2 mt-1">Create a Account</h1>
                   <hr>
                   <div class="form-group mb-1">
                     <label class="text-muted mb-0"><b>Name <span class="text-danger">*</span> </b></label>
-                    <input type="text" name="uname" id="userName" id="userName" class="form-control" placeholder="Name" required>
+                    <input type="text" name="userName" id="userName" class="form-control" placeholder="Name" required>
                   </div>
                   <div class="form-group mb-1 mt-0">
                     <label class="text-muted mb-0"><b>Contact Number <span class="text-danger">*</span> </b></label>
@@ -37,6 +43,15 @@
                     <label class="text-muted mb-0"><b>Email ID <span class="text-danger">*</span> </b></label>
                     <input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="Email ID" required>
                   </div>
+                  <div class="form-group mb-1 mt-0">
+                    <label class="text-muted mb-0"><b>Password <span class="text-danger">*</span> </b></label>
+                    <input type="email" name="password" id="password" class="form-control" placeholder="Choose a password" required>
+                  </div>
+                  <div class="form-group mb-1 mt-0">
+                    <label class="text-muted mb-0"><b>Repeat Password <span class="text-danger">*</span> </b></label>
+                    <input type="email" name="repeatPassword" id="repeatPassword" class="form-control" placeholder="Repeat Password" required>
+                  </div>
+                  
                   <div class="form-group mb-1">
                     <label class="text-muted mb-0"><b>Name of Your Firm <span class="text-danger">*</span> </b></label>
                     <input type="text" name="userCompanyName" id="userCompanyName" class="form-control" placeholder="Provide your Company Name">
@@ -62,7 +77,12 @@
                   </div>
                   </form>
                   <div class="alert alert-success" role="alert">
-                    Succesfully Registered! Kindly Check Mail Box.
+                    <% if(null!=request.getAttribute("message"))
+    		{
+    	
+        		out.println(request.getAttribute("message"));
+        
+    		}%>
                 </div>
               </div>
             </div>
@@ -71,7 +91,7 @@
    </section>
    <!---visible for Mbile Device-->
    <div class="bg-white p-4 d-block d-md-none d-xl-none d-lg-none">
-    <form>
+    <form action="/Registration" method="post">
       <h5  class="title_log mb-2 mt-1">Create a Account</h5>
       <hr>
       <div class="form-group mb-1">
@@ -85,6 +105,14 @@
       <div class="form-group mb-1 mt-0">
         <label class="text-muted mb-0"><b>Email ID <span class="text-danger">*</span> </b></label>
         <input type="email" class="form-control" placeholder="Email ID" required>
+      </div>
+      <div class="form-group mb-1 mt-0">
+        <label class="text-muted mb-0"><b>Password <span class="text-danger">*</span> </b></label>
+        <input type="password" name="password" id="password" class="form-control" placeholder="Choose a password" required>
+      </div>
+      <div class="form-group mb-1 mt-0">
+        <label class="text-muted mb-0"><b>Repeat Password <span class="text-danger">*</span> </b></label>
+        <input type="password" name="repeatPassword" id="repeatPassword" class="form-control" placeholder="Repeat Password" required>
       </div>
       <div class="form-group mb-1">
         <label class="text-muted mb-0"><b>Name of Your Firm <span class="text-danger">*</span> </b></label>
@@ -111,7 +139,13 @@
       </div>
   </form>
   <div class="alert alert-success" role="alert">
-    Succesfully Registered! Kindly Check Mail Box.
+  <% if(null!=request.getAttribute("message"))
+    		{
+    	
+        		out.println(request.getAttribute("message"));
+        
+    		}%>
+   
 </div>
    </div>
 </body>

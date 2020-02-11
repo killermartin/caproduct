@@ -22,13 +22,13 @@
            </div>
            <div class="col-md-6 col-xl-6 col-xs-12 mt-3">
                <div class="container-fluid">
-                <form>
+                <form action="/Login" method="post">
                     <h1  class="title_log pb-4">Log in</h1>
                     <hr class="mb-5">
                     <label for="uname"><b>Username/Email:</b></label>
-                    <input type="text" class="form-control" placeholder="Username/Email ID" name="uname" required>
+                    <input type="text" class="form-control" placeholder="Username/Email ID" name="userName" required>
                     <label for="psw"><b>Password:</b></label>
-                    <input type="password" class="form-control" placeholder="Password" name="psw" required>
+                    <input type="password" class="form-control" placeholder="Password" name="password" required>
                     <label >
                       <input class="checkbox" type="checkbox" checked="checked" name="remember"> Remember me
                     </label>
@@ -49,13 +49,13 @@
    </section>
    <!---visible for Mbile Device-->
    <div class="bg-white p-4 d-block d-md-none d-xl-none d-lg-block">
-    <form>
+    <form action="/Login" method="post">
       <h1  class="title_log pb-4">Log in</h1>
       <hr class="mb-5">
       <label for="uname"><b>Username/Email:</b></label>
-      <input type="text" class="form-control" placeholder="Username/Email ID" name="uname" required>
+      <input type="text" class="form-control" placeholder="Username/Email ID" name="userName" required>
       <label for="psw"><b>Password:</b></label>
-      <input type="password" class="form-control" placeholder="Password" name="psw" required>
+      <input type="password" class="form-control" placeholder="Password" name="password" required>
       <label >
         <input class="checkbox" type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -66,7 +66,7 @@
           </p> 
       </div>
       <div class="queary" >
-          <p class="psw" style="font-weight: bold;">New User?<a href="register.html" class="text-decoration-none text-success" > Register Now</a></p>
+          <p class="psw" style="font-weight: bold;">New User?<a href="register.jsp" class="text-decoration-none text-success" > Register Now</a></p>
       </div>
 </form>
    </div>
