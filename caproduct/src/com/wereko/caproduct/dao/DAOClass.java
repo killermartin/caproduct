@@ -18,7 +18,7 @@ public class DAOClass {
 
 		try
 		{
-			String insert="insert into users values(?,?,?,?,?,?)";
+			String insert="insert into users (userName, userPhone, userEmail, password, userCompanyName, userCompanyType) values(?,?,?,?,?,?)";
 			PreparedStatement ps =con.prepareStatement(insert);//DB will Compiler
 			
 			ps.setString(1, userbean.getUserName());

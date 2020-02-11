@@ -28,7 +28,7 @@
            </div>
            <div class="col-md-6 col-xl-6 col-xs-12">
                <div class="container-fluid">
-                <form action="/Registration" method="post">
+                <form action="Registration" method="post">
                   <h1  class="title_log mb-2 mt-1">Create a Account</h1>
                   <hr>
                   <div class="form-group mb-1">
@@ -76,15 +76,17 @@
                       </div>
                   </div>
                   </form>
-                  <% if(null!=request.getAttribute("message"))
+                   
                   <div class="alert alert-success" role="alert">
+                  <% if(null!=request.getAttribute("message"))
                     
     		{
     	
         		out.println(request.getAttribute("message"));
         
-    		}
-                </div>%>
+    		}%>
+                </div>
+                
               </div>
             </div>
        </div>
@@ -122,9 +124,9 @@
       <div class="form-group mb-1">
         <label class="text-muted mb-0"><b>Select Company Type <span class="text-danger">*</span></b></label>
         <select class="form-control">
-          <option value="">IT Consulting</option>
-          <option value="">Manufacturing</option>
-          <option value="">Business Development</option>
+          <option value="IT Consulting">IT Consulting</option>
+          <option value="Manufacturing">Manufacturing</option>
+          <option value="Business Development">Business Development</option>
         </select>
       </div>
       <label >

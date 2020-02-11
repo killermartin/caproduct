@@ -47,7 +47,9 @@ public class RegistrationController extends HttpServlet {
 		String userEmail = request.getParameter("userEmail");
 		String password = request.getParameter("password");
 		String userCompanyName = request.getParameter("userCompanyName");
-		String userCompanyType = request.getParameter("userCompanuType");
+		String userCompanyType = request.getParameter("userCompanyType");
+		
+		
 		
 		UserBean userbean = new UserBean();
 		ServiceClass serviceclass = new ServiceClass();
