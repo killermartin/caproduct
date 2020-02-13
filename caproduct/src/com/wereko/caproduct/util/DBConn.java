@@ -1,4 +1,4 @@
-package com.wereko.connection;
+package com.wereko.caproduct.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +10,7 @@ public class DBConn {
 	public static Connection getDBConn(){  
 		try{  
 		Class.forName("com.mysql.jdbc.Driver");  
-		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/caproduct?characterEncoding=latin1&useConfigs=maxPerformance","root","root1234");  
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/caproduct","root","root1234");  
 		//here sonoo is database name, root is username and password   
 		System.out.println("Connected");
 		

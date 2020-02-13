@@ -14,7 +14,7 @@ public class DAOClass {
 	{
 		boolean status=false;
 		
-		Connection con=com.wereko.connection.DBConn.getDBConn();
+		Connection con=com.wereko.caproduct.util.DBConn.getDBConn();
 
 		try
 		{
@@ -49,7 +49,7 @@ public class DAOClass {
 		boolean status=false;
 		int flag=0;
 		
-		Connection con=com.wereko.connection.DBConn.getDBConn();
+		Connection con=com.wereko.caproduct.util.DBConn.getDBConn();
 		try {
 		String sql="Select userEmail,password from users where email=? ";
 		PreparedStatement st=con.prepareStatement(sql);
