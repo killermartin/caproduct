@@ -20,6 +20,9 @@ public class ServiceClass {
 	
 	public boolean validateUser(UserBean userbean)
 	{
+		if(daoclass.validateUser(userbean))
+			return true;
+		else
 		return false;
 		
 	}

@@ -58,13 +58,12 @@ public class LoginController extends HttpServlet {
 			HttpSession session = request.getSession(true);
 			session.setAttribute("name", email);
 			
-			RequestDispatcher rd=request.getRequestDispatcher("");
-			rd.forward(request, response);
+			response.sendRedirect("http://3.6.89.195/caproduct/create-company.html");
 		}
 		
 	    else{  
 	        request.setAttribute("errorMessage", "Wrong Username or Password");
-	        RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+	        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
 	        rd.forward(request, response);
 	                      
 	        }

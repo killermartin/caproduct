@@ -77,15 +77,12 @@
                   </div>
                   </form>
                    
-                  <div class="alert alert-success" role="alert">
                   <% if(null!=request.getAttribute("message"))
-                    
     		{
     	
-        		out.println(request.getAttribute("message"));
+        		out.println("<div class=\"alert alert-success\" role=\"alert\">"+request.getAttribute("message")+"</div>");
         
     		}%>
-                </div>
                 
               </div>
             </div>
@@ -141,15 +138,15 @@
           </div>
       </div>
   </form>
-  <div class="alert alert-success" role="alert">
+  
   <% if(null!=request.getAttribute("message"))
     		{
     	
-        		out.println(request.getAttribute("message"));
+        		out.println("<div class=\"alert alert-success\" role=\"alert\">"+request.getAttribute("message")+"</div>");
         
     		}%>
    
-</div>
+
    </div>
 </body>
 </html>
