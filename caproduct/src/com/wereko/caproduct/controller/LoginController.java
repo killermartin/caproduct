@@ -62,7 +62,7 @@ public class LoginController extends HttpServlet {
 		}
 		
 	    else{  
-	        request.setAttribute("errorMessage", "Wrong Username or Password");
+	        request.setAttribute("message", "Wrong Username or Password");
 	        RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
 	        rd.forward(request, response);
 	                      
